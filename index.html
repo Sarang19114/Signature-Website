@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="block">
+                <p>Text Color Picker</p>
+                <input type="color" class="form-contol" id="color-picker">
+            </div>
+            <div class="block">
+                <p>Background</p>
+                <input type="color" class="form-contol" id="canvacolor">
+            </div>
+            <div class="block">
+                <p>Thickness</p>
+                <select id="fontSize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+        </div>
+        <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+        <div class="bottom">
+            <button type="button" class="btn" id="clearbtn" style="background-color: red;">Clear</button>
+            <button type="button" class="btn" id="savebtn" style="background-color: green;">Save & Download</button>
+            <button type="button" class="btn" id="retbtn" style="background-color: yellowgreen;">Retrieve Saved Signature</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

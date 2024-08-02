@@ -1,0 +1,49 @@
+.canvas {
+    border: 2px solid black;
+}
+
+.top, .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.block, input, select, button {
+    width: 80%;
+}
+
+/* Positioning: The element is usually given an absolute or fixed position, which allows it to be positioned relative to its closest positioned ancestor or the viewport.
+
+Top and Left Properties: The element is positioned at the center point of its container using top: 50%; left: 50%;. This places the top-left corner of the element at the center of the container.
+
+Translate Transformation: The transform: translate(-50%, -50%); rule then shifts the element left and up by 50% of its own width and height, effectively moving its center to the center of the container.
+*/
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.top > .block {
+    margin: 10px;
+}
+
+.bottom button {
+    margin: 10px;
+}
+
+.block p {
+    margin: 10px auto;
+    width: 50%;
+}
+
+.btn {
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 3px black;
+}
